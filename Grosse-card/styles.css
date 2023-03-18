@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1d24;
+  padding: 0 1.5rem;
+  font-size: 1.6rem;
+}
+a {
+  text-decoration: none;
+}
+
+.blog-post {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  max-width: 90rem;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+}
+
+.blog-post-img {
+  position: relative;
+  min-width: 35rem;
+  max-width: 35rem;
+  height: 30rem;
+  transform: translateX(-8rem);
+  /* background-color: aqua; */
+}
+
+.blog-post-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.blog-post-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  /* background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
+  border-radius: 15px;
+  opacity: 0.5;
+  box-shadow: 0.5rem 0.5rem 3rem 1px;
+}
+
+.blog-post-date span {
+  display: block;
+  color: #8e8c8c;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+.blog-post-title {
+  font-size: 2.5rem;
+  margin: 1.5rem 0 2rem;
+  text-transform: uppercase;
+  color: #4facfe;
+  transition: all 300ms linear;
+}
+
+.post-blog-info p {
+  margin-bottom: 3rem;
+  color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 5px;
+}
+
+.blog-post-btn {
+  display: inline-block;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  padding: 1.5rem 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 0.8rem;
+  transition: all 300ms linear;
+}
+
+.blog-post-btn:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%);
+}
+
+
+@media (max-width: 1068px) {
+  .blog-post {
+    max-width: 80rem;
+  }
+  .blog-post-img {
+    min-width: 30rem;
+    max-width: 30rem;
+  }
+}
+@media (max-width: 950px) {
+  .blog-post {
+    max-width: 70rem;
+  }
+}
+@media (max-width: 890px) {
+  .blog-post {
+    padding: 2.5rem;
+    flex-direction: column;
+  }
+  .blog-post-img {
+    min-width: 100%;
+    transform: translate(0, -8rem);
+  }
+}
