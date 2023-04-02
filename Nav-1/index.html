@@ -33,7 +33,7 @@
   </header>
 
   <section class="hero"></section>
-	<section class="demo-content"></section>
+	<!-- <section class="demo-content"></section> -->
 
   <script>
     const isScrolling = () => {
@@ -42,6 +42,9 @@
       headerEl.classList.toggle('active', windowPosition)
     }
     window.addEventListener('scroll', isScrolling)
+
+
+    console.log(window.scrollY)
   </script>
 </body>
 </html>
