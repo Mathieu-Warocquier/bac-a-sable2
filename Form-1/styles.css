@@ -48,7 +48,7 @@ input {
 	z-index: -1;
 	width: 100%;
 	height: 10rem;
-	background-color: #6600ec;
+	background-color: #5B6C5D;
 	border-radius: 1rem 1rem 100% 100%;
 }
 .form__title {
@@ -71,7 +71,7 @@ input {
 .form__icon {
 	font-size: 2rem;
 	margin-right: 1rem;
-	color: #6600ec;
+	color: #5B6C5D;
 }
 .form__input {
 	position: relative;
@@ -91,7 +91,7 @@ input {
 .form__bar::before {
 	content: '';
 	position: absolute;
-	background-color: #6600ec;
+	background-color: #5B6C5D;
 	width: 100%;
 	height: 2px;
 	transform: scaleX(0);
@@ -106,7 +106,7 @@ input {
 	display: block;
 	margin: 2.5rem auto 3rem;
 	padding: 1rem 5rem;
-	background-color: #6600ec;
+	background-color: #5B6C5D;
 	color: #fff;
 	border-radius: 3rem;
 	cursor: pointer;
@@ -121,7 +121,7 @@ input {
 }
 .form__switch a {
 	text-decoration: none;
-	color: #6600ec;
+	color: #5B6C5D;
 }
 .form__switch a:hover {
 	text-decoration: underline;
