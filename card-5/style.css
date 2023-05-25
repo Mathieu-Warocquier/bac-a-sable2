@@ -34,8 +34,22 @@ img {
 
 .card:hover {
   transform: translateY(-5px);
+  cursor: pointer;
 }
 
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transform: scaleY(0.75);
+  transform-origin: bottom;
+  background: linear-gradient(transparent, rgba(0,0,0,0.4), #000);
+  transition: transform .25s;
+}
+
+.card:hover::before {
+  transform: scaleY(1);
+}
 
 
 .card_img {
